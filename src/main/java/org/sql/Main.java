@@ -1,12 +1,12 @@
 package org.sql;
 
 
-import org.sql.dataextractor.SQLInsertExtractor;
+import org.sql.dataextractor.SQLExtractor;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    private static final SQLInsertExtractor insert = new SQLInsertExtractor();
+    private static final SQLExtractor insert = new SQLExtractor();
     public static final String SQL_QUERY = "CREATE TABLE customers (\n" +
             "    customer_id INT PRIMARY KEY,\n" +
             "    customer_name VARCHAR(50)\n" +

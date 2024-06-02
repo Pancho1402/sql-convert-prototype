@@ -51,7 +51,6 @@ public class RegexUtils {
     private static Matcher getMatcher(String input, String regex) {
         if(!input.isEmpty() && !regex.isEmpty())
             return Pattern.compile(regex, Pattern.CASE_INSENSITIVE).matcher(input);
-
         return null;
     }
 }
