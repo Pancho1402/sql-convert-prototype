@@ -28,27 +28,23 @@ public class RegexUtils {
     public static List<String> findMatches(String input, String regex,
                              int groupIndex) {
         final Matcher matcher = getMatcher(input, regex);
+        assert matcher != null;
 
-        if(matcher!=null){
-            List<String> listMatcher = new ArrayList<>();
-            while(matcher.find()) listMatcher.add(matcher.group(groupIndex));
-            return listMatcher;
-        }
-        return Collections.emptyList();
+        List<String> listMatcher = new ArrayList<>();
+        while(matcher.find()) listMatcher.add(matcher.group(groupIndex));
+        return listMatcher;
     }
 
     public static List<String> findMatches(String input, String regex) {
         final Matcher matcher = getMatcher(input, regex);
+        assert matcher != null;
 
-        if(matcher!=null){
-            List<String> listMatcher = new ArrayList<>();
-            while(matcher.find()) listMatcher.add(matcher.group());
-            return listMatcher;
-        }
-        return Collections.emptyList();
+        List<String> listMatcher = new ArrayList<>();
+        while(matcher.find()) listMatcher.add(matcher.group());
+        return listMatcher;
     }
 
-    private static Matcher getMatcher(String input, String regex) {
+    public static Matcher getMatcher(String input, String regex) {
         if(!input.isEmpty() && !regex.isEmpty())
             return Pattern.compile(regex, Pattern.CASE_INSENSITIVE).matcher(input);
         return null;

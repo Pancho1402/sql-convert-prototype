@@ -19,3 +19,7 @@ e
 5src/main/java/org/sql/dataextractor/SQLExtractor.java,1\7\1723b9dd56a143ebed2098128140e26a9e0db8bb
 b
 2src/test/java/dataextractor/JoinExtractorTest.java,2\0\20c98d55c689c3a3a4bb378890392a96198458e9
+Y
+)src/test/java/convert/JsonFormatTest.java,e\f\ef70f6f5bd99bb1e1bc16c85d57ec7f839c67be5
+c
+3src/main/java/org/sql/dataextractor/MappingSql.java,b\a\baa5fcce95229dec69d21747a89aef5dc5bffad3
